@@ -174,7 +174,6 @@
                 { name: 'Discord', value: senderDiscord },
                 { name: 'Email', value: senderEmail },
                 { name: 'Message', value: senderMessage },
-                { name: 'IP Address', value: ip },
                 { name: 'User Agent', value: userAgent },
                 { name: 'Language', value: language },
                 { name: 'Browser', value: browser },
@@ -200,8 +199,8 @@
         })
         .then(response => {
           if (response.ok) {
-            alert('Mensaje enviado con exito');
-            window.location.href = 'formulario.html';
+            alert('Message sent succesfully');
+            window.location.href = 'form-submitted';
           } else {
             alert('An unknown error occurred on the server.');
           }
