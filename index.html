@@ -203,12 +203,12 @@
             alert('Mensaje enviado con exito');
             window.location.href = 'formulario.html';
           } else {
-            alert('a sucedio un error desconocido en el servidor.');
+            alert('An unknown error occurred on the server.');
           }
         })
         .catch(error => {
           console.error('Error:', error);
-          alert('a sucedio un error desconocido en el servidor.');
+          alert('An unknown error occurred on the server.');
         });
       });
     }
@@ -258,7 +258,7 @@ function getOperatingSystemName(userAgent) {
     { keyword: 'iPad', name: 'iOS' },
     { keyword: 'iPod', name: 'iOS' },
     { keyword: 'Android', name: 'Android' }
-    // Puedes agregar más sistemas operativos y palabras clave según sea necesario
+    // You can add more operating systems and keywords as needed
   ];
 
   for (const os of operatingSystemKeywords) {
@@ -306,7 +306,7 @@ function getDeviceName(userAgent) {
     }
   }
 
-  return 'No registrado en la base de datos';
+  return 'Not registered in the database';
 }
 
 
