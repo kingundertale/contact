@@ -105,14 +105,6 @@
       const senderEmail = document.getElementById('emailInput').value;
       const senderMessage = document.getElementById('messageInput').value;
 
-      const visitorIP = fetch('https://api.ipify.org?format=json')
-        .then(response => response.json())
-        .then(data => data.ip)
-        .catch(error => {
-          console.error('Error:', error);
-          return 'Unknown';
-        });
-    
  // Función para crear una cookie en el navegador
  // function to create a cookie
         function setCookie(name, value, days) {
